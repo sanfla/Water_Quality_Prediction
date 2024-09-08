@@ -65,31 +65,33 @@ elif page == "Perhitungan Prediksi":
 
     st.title("Prediksi Keamanan Air")
 
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2, col3, col4, col5 = st.columns(5)
 
     with col1:
         aluminium = st.number_input('Aluminium (mg/L)', min_value=0.0, max_value=100.0)
         ammonia = st.number_input('Ammonia (mg/L)', min_value=0.0, max_value=100.0)
         arsenic = st.number_input('Arsenik (mg/L)', min_value=0.0, max_value=100.0)
         barium = st.number_input('Barium (mg/L)', min_value=0.0, max_value=100.0)
-        cadmium = st.number_input('Kadmium (mg/L)', min_value=0.0, max_value=100.0)
-
+        
     with col2:
+        cadmium = st.number_input('Kadmium (mg/L)', min_value=0.0, max_value=100.0)
         chloramine = st.number_input('Chloramine (mg/L)', min_value=0.0, max_value=100.0)
         chromium = st.number_input('Chromium (mg/L)', min_value=0.0, max_value=100.0)
         copper = st.number_input('Tembaga (mg/L)', min_value=0.0, max_value=100.0)
-        flouride = st.number_input('Fluoride (mg/L)', min_value=0.0, max_value=100.0)
-        bacteria = st.number_input('Bakteri (CFU/mL)', min_value=0.0, max_value=1000.0)
 
     with col3:
+        flouride = st.number_input('Fluoride (mg/L)', min_value=0.0, max_value=100.0)
+        bacteria = st.number_input('Bakteri (CFU/mL)', min_value=0.0, max_value=1000.0)
         viruses = st.number_input('Virus (PFU/mL)', min_value=0.0, max_value=1000.0)
         lead = st.number_input('Timbal (mg/L)', min_value=0.0, max_value=100.0)
+
+    with col4:
         nitrates = st.number_input('Nitrate (mg/L)', min_value=0.0, max_value=100.0)
         nitrites = st.number_input('Nitrite (mg/L)', min_value=0.0, max_value=100.0)
         mercury = st.number_input('Mercury (mg/L)', min_value=0.0, max_value=100.0)
-
-    with col4:
         perchlorate = st.number_input('Perchlorate (mg/L)', min_value=0.0, max_value=100.0)
+
+    with col5:
         radium = st.number_input('Radium (mg/L)', min_value=0.0, max_value=100.0)
         selenium = st.number_input('Selenium (mg/L)', min_value=0.0, max_value=100.0)
         silver = st.number_input('Perak (mg/L)', min_value=0.0, max_value=100.0)
